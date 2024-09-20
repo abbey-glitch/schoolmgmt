@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Upload Form</title>
+</head>
+<body>
+    <div id="wrapper">
+        <form action="/form/upload" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Content</legend>
+                <div id="filecontent">
+                    <label for="file">Upload</label>
+                    <input type="file" name="image" id="img" placeholder="please upload content"><br>
+                    <label for="imgdescription">Description</label><br>
+                   <textarea name="description" id="" cols="30" rows="10"
+                   placeholder="describe your image"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Buttons</legend>
+                <input type="submit" value="submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
